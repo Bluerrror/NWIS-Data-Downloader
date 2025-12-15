@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "nwis-data-downloader"
+version = "0.1.0"
+description = "A Python package for downloading USGS NWIS hydrological data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+{ name = "Shahab Shojaee" }
+]
+
+
+keywords = ["hydrology", "USGS", "NWIS", "water", "data"]
+
+
+classifiers = [
+"Programming Language :: Python :: 3",
+"License :: OSI Approved :: MIT License",
+"Operating System :: OS Independent"
+]
+
+
+dependencies = [
+"requests",
+"pandas"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Bluerrror/NWIS-Data-Downloader"
+Repository = "https://github.com/Bluerrror/NWIS-Data-Downloader"
+Issues = "https://github.com/Bluerrror/NWIS-Data-Downloader/issues"
