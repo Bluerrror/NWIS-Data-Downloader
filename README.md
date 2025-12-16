@@ -173,7 +173,6 @@ plt.savefig('discharge_plot.png')
 plt.show()
 ```
 
-> See `example_notebook.ipynb` for a full Jupyter demo.
 
 ---
 
