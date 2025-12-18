@@ -64,7 +64,7 @@ get_usgs_parameters()
 ### 1. Discover and Search Parameters
 
 ```python
-from nwis_data_downloader import get_usgs_parameters, search_parameters
+from usgs_data_fetcher import get_usgs_parameters, search_parameters
 
 params_df = get_usgs_parameters()
 print(f"Total parameters: {len(params_df)}")
@@ -83,7 +83,7 @@ print(f"Water Quality Matches: {len(wq_params)}")
 ### 2. Fetch Data for a Single Site
 
 ```python
-from nwis_data_downloader import fetch_usgs_daily, usgs_json_to_df
+from usgs_data_fetcher import fetch_usgs_daily, usgs_json_to_df
 
 site = '01491000'
 json_data = fetch_usgs_daily(
@@ -103,7 +103,7 @@ print(df.shape)
 ### 3. Batch Fetch with Filtering
 
 ```python
-from nwis_data_downloader import fetch_batch_usgs_data
+from usgs_data_fetcher import fetch_batch_usgs_data
 
 sites = [
     '01491000',
@@ -133,7 +133,7 @@ print(data_df.describe())
 
 ```python
 import pandas as pd
-from nwis_data_downloader import get_usgs_parameters, search_parameters
+from usgs_data_fetcher import get_usgs_parameters, search_parameters
 
 params_df = get_usgs_parameters()
 query = input("Enter search term (e.g., 'sediment'): ").strip()
